@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='goal5' inline='true' name='federated.197njwj1twsu6j1elsp9t0r1lj46' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='goal5' name='textscan.07iabec05j8ll61aezs880ygps17'>
+            <connection class='textscan' directory='C:/Users/s566903/Downloads/bigdata' filename='goal5.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.07iabec05j8ll61aezs880ygps17' name='goal5.csv' table='[goal5#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='use_chip' ordinal='0' />
+            <column datatype='integer' name='transaction_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[goal5.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>use_chip</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[use_chip]</local-name>
+            <parent-name>[goal5.csv]</parent-name>
+            <remote-alias>use_chip</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goal5.csv_54730A8B209B40FAA7584EB2F6FDE9F0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transaction_count]</local-name>
+            <parent-name>[goal5.csv]</parent-name>
+            <remote-alias>transaction_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goal5.csv_54730A8B209B40FAA7584EB2F6FDE9F0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='goal5.csv' datatype='table' name='[__tableau_internal_object_id__].[goal5.csv_54730A8B209B40FAA7584EB2F6FDE9F0]' role='measure' type='quantitative' />
+      <column caption='Transaction Count' datatype='integer' name='[transaction_count]' role='measure' type='quantitative' />
+      <column caption='Use Chip' datatype='string' name='[use_chip]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/s566903/AppData/Local/Temp/TableauTemp/#TableauTemp_1weh14016ytj211duyroh1e9gg0t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/09/2024 11:56:46 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>use_chip</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[use_chip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>use_chip</remote-alias>
+              <ordinal>0</ordinal>
+              <family>goal5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[goal5.csv_54730A8B209B40FAA7584EB2F6FDE9F0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[transaction_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>goal5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[goal5.csv_54730A8B209B40FAA7584EB2F6FDE9F0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='goal5.csv' id='goal5.csv_54730A8B209B40FAA7584EB2F6FDE9F0'>
+            <properties context=''>
+              <relation connection='textscan.07iabec05j8ll61aezs880ygps17' name='goal5.csv' table='[goal5#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='use_chip' ordinal='0' />
+                  <column datatype='integer' name='transaction_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='goal5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<Sheet Name> Online transaction vs Swipe Transactions]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='goal5' name='federated.197njwj1twsu6j1elsp9t0r1lj46' />
+          </datasources>
+          <datasource-dependencies datasource='federated.197njwj1twsu6j1elsp9t0r1lj46'>
+            <column-instance column='[use_chip]' derivation='None' name='[none:use_chip:nk]' pivot='key' type='nominal' />
+            <column-instance column='[transaction_count]' derivation='Sum' name='[sum:transaction_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Transaction Count' datatype='integer' name='[transaction_count]' role='measure' type='quantitative' />
+            <column caption='Use Chip' datatype='string' name='[use_chip]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.197njwj1twsu6j1elsp9t0r1lj46].[none:use_chip:nk]' />
+              <wedge-size column='[federated.197njwj1twsu6j1elsp9t0r1lj46].[sum:transaction_count:qk]' />
+              <size column='[federated.197njwj1twsu6j1elsp9t0r1lj46].[sum:transaction_count:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9C36482B-386B-4186-986F-2D6EFD64279E}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='goal5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.197njwj1twsu6j1elsp9t0r1lj46].[none:use_chip:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.197njwj1twsu6j1elsp9t0r1lj46].[sum:transaction_count:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.197njwj1twsu6j1elsp9t0r1lj46].[none:use_chip:nk]</field>
+            <field>[federated.197njwj1twsu6j1elsp9t0r1lj46].[sum:transaction_count:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B251BD3D-08DC-4BE0-8925-944C354B161A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='164' name='goal5' width='164'>
+      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
+      T8IAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

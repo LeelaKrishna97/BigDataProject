@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='goal3' inline='true' name='federated.0fw59jg1pcdl6k13q0buo0cdh1xa' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='goal3' name='textscan.17yqhag1y66jo01g3pdlw1vx0ye7'>
+            <connection class='textscan' directory='C:/Users/s566903/Downloads/bigdata' filename='goal3.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.17yqhag1y66jo01g3pdlw1vx0ye7' name='goal3.csv' table='[goal3#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='merchant_state' ordinal='0' />
+            <column datatype='integer' name='error_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[goal3.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merchant_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[merchant_state]</local-name>
+            <parent-name>[goal3.csv]</parent-name>
+            <remote-alias>merchant_state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[goal3.csv_D1A2288105704B6798275C73F172B0DB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>error_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[error_count]</local-name>
+            <parent-name>[goal3.csv]</parent-name>
+            <remote-alias>error_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[goal3.csv_D1A2288105704B6798275C73F172B0DB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='goal3.csv' datatype='table' name='[__tableau_internal_object_id__].[goal3.csv_D1A2288105704B6798275C73F172B0DB]' role='measure' type='quantitative' />
+      <column caption='Error Count' datatype='integer' name='[error_count]' role='measure' type='quantitative' />
+      <column caption='Merchant State' datatype='string' name='[merchant_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/s566903/AppData/Local/Temp/TableauTemp/#TableauTemp_1wz2d4c0fw961q14i7o0e0f18jar.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/09/2024 11:49:46 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>merchant_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[merchant_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>merchant_state</remote-alias>
+              <ordinal>0</ordinal>
+              <family>goal3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[goal3.csv_D1A2288105704B6798275C73F172B0DB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>error_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[error_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>error_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>goal3.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[goal3.csv_D1A2288105704B6798275C73F172B0DB]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='goal3.csv' id='goal3.csv_D1A2288105704B6798275C73F172B0DB'>
+            <properties context=''>
+              <relation connection='textscan.17yqhag1y66jo01g3pdlw1vx0ye7' name='goal3.csv' table='[goal3#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='merchant_state' ordinal='0' />
+                  <column datatype='integer' name='error_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='goal3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='goal3' name='federated.0fw59jg1pcdl6k13q0buo0cdh1xa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fw59jg1pcdl6k13q0buo0cdh1xa'>
+            <column caption='Error Count' datatype='integer' name='[error_count]' role='measure' type='quantitative' />
+            <column caption='Merchant State' datatype='string' name='[merchant_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[merchant_state]' derivation='None' name='[none:merchant_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[error_count]' derivation='Sum' name='[sum:error_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fw59jg1pcdl6k13q0buo0cdh1xa].[sum:error_count:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0fw59jg1pcdl6k13q0buo0cdh1xa].[sum:error_count:qk]' />
+              <color column='[federated.0fw59jg1pcdl6k13q0buo0cdh1xa].[none:merchant_state:nk]' />
+              <text column='[federated.0fw59jg1pcdl6k13q0buo0cdh1xa].[none:merchant_state:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6FA1E19E-CED7-4749-8CA8-988895C89FBB}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='goal3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fw59jg1pcdl6k13q0buo0cdh1xa].[none:merchant_state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fw59jg1pcdl6k13q0buo0cdh1xa].[none:merchant_state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5A2CA6AD-11DE-4A2D-A83C-E2098211019D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='goal3' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
